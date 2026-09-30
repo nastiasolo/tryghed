@@ -141,7 +141,14 @@
   .utility__link--email { display: none; }
 }
 
-.header { position: relative; z-index: 5; background: var(--color-white); }
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  max-height: 100dvh;
+  overflow-y: auto;
+  background: var(--color-white);
+}
 .header__inner { display: flex; align-items: center; gap: 2.5rem; min-height: 6.5rem; }
 .brand { display: inline-flex; flex-shrink: 0; }
 .brand__logo { display: block; width: 8.2rem; height: auto; }
